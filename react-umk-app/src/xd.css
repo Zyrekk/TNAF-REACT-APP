@@ -1,0 +1,8 @@
+.info{
+    display: flex;
+    flex-direction: column;
+}
+.user{
+    display: flex;
+    margin-right: 10px;
+}

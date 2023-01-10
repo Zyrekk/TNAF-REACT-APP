@@ -32,7 +32,8 @@ function App() {
   return (
       <div id="App">
           <div className="select-container">
-              <select value={selects} onChange={e=>setSelects(e.target.value)}>
+              <select defaultValue={0} value={selects} onChange={e=>setSelects(e.target.value)}>
+                  <option hidden value={0}>...</option>
                   {options.map((option) => (
                       <option key={option.id} value={option.id}>{option.label}</option>
                   ))}
